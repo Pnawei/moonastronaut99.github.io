@@ -15,18 +15,18 @@
 <meta property="og:site_name" content="lunarfun">
 <meta property="og:description" content="java入门 视频资料：哪一块不会就去b站搜那一块内容对应的视频 文档：菜鸟教程  https:&#x2F;&#x2F;www.runoob.com&#x2F;java&#x2F;java-tutorial.html 书籍：">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="d:/JAVA_test/方法.jpg">
+<meta property="og:image" content="https://i.loli.net/2021/11/04/lOLGbSyUVTs9B4M.jpg">
 <meta property="og:image" content="https://www.runoob.com/wp-content/uploads/2013/12/overloading-vs-overriding.png">
 <meta property="og:image" content="https://www.runoob.com/wp-content/uploads/2014/01/java-coll-2020-11-16.png">
 <meta property="og:image" content="c:/Users/Lenovo/AppData/Roaming/Typora/typora-user-images/image-20211023185723214.png">
 <meta property="og:image" content="https://www.runoob.com/wp-content/uploads/2013/12/iostream2xx.png">
 <meta property="article:published_time" content="2021-10-31T16:00:00.000Z">
-<meta property="article:modified_time" content="2021-11-03T07:20:54.441Z">
+<meta property="article:modified_time" content="2021-11-04T15:30:07.660Z">
 <meta property="article:author" content="lunar Ping">
 <meta property="article:tag" content="blog">
 <meta property="article:tag" content="知识">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="d:/JAVA_test/方法.jpg">
+<meta name="twitter:image" content="https://i.loli.net/2021/11/04/lOLGbSyUVTs9B4M.jpg">
   
     <link rel="alternative" href="/atom.xml" title="lunarfun" type="application/atom+xml">
   
@@ -299,17 +299,15 @@
 <h4 id="对象和类"><a href="#对象和类" class="headerlink" title="对象和类"></a>对象和类</h4><ul>
 <li><p><strong>方法（等价与c/c++中的函数）</strong></p>
 <ul>
-<li>方法的说明 <img src="D:\JAVA_test\方法.jpg" alt="方法"></li>
+<li>方法的说明 <img src="https://i.loli.net/2021/11/04/lOLGbSyUVTs9B4M.jpg" alt="方法.jpg"></li>
+</ul>
+</li>
 </ul>
 <ul>
 <li><p>方法实例</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/** 返回两个整型变量数据的较大值 */</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">max</span><span class="params">(<span class="keyword">int</span> num1, <span class="keyword">int</span> num2)</span> </span>&#123;</span><br><span class="line">   <span class="keyword">int</span> result;</span><br><span class="line">   <span class="keyword">if</span> (num1 &gt; num2)</span><br><span class="line">      result = num1;</span><br><span class="line">   <span class="keyword">else</span></span><br><span class="line">      result = num2;</span><br><span class="line"> </span><br><span class="line">   <span class="keyword">return</span> result; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-</ul>
-<ul>
 <li><p>方法的调用实例</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TestMax</span> </span>&#123;</span><br><span class="line">   <span class="comment">/** 主方法 */</span></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">      <span class="keyword">int</span> i = <span class="number">5</span>;</span><br><span class="line">      <span class="keyword">int</span> j = <span class="number">2</span>;</span><br><span class="line">      <span class="keyword">int</span> k = max(i, j);</span><br><span class="line">      System.out.println( i + <span class="string">&quot; 和 &quot;</span> + j + <span class="string">&quot; 比较，最大值是：&quot;</span> + k);</span><br><span class="line">   &#125;</span><br><span class="line"> </span><br><span class="line">   <span class="comment">/** 返回两个整数变量较大的值 */</span></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">max</span><span class="params">(<span class="keyword">int</span> num1, <span class="keyword">int</span> num2)</span> </span>&#123;</span><br><span class="line">      <span class="keyword">int</span> result;</span><br><span class="line">      <span class="keyword">if</span> (num1 &gt; num2)</span><br><span class="line">         result = num1;</span><br><span class="line">      <span class="keyword">else</span></span><br><span class="line">         result = num2;</span><br><span class="line"> </span><br><span class="line">      <span class="keyword">return</span> result; </span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-</ul>
-</li>
 <li><p><strong>重写和重载</strong></p>
 <ul>
 <li><p>方法的重写</p>
@@ -477,8 +475,7 @@
 <ul>
 <li><p>说明</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1.</span>接口：是代表集合的抽象数据类型。例如 Collection、List、Set、Map 等。之所以定义多个接口，是为了以不同的方式操作集合对象</span><br><span class="line"></span><br><span class="line"><span class="number">2.</span>实现（类）：是集合接口的具体实现。从本质上讲，它们是可重复使用的数据结构，例如：ArrayList、LinkedList、HashSet、HashMap。</span><br><span class="line"></span><br><span class="line"><span class="number">3.</span>算法：是实现集合接口的对象里的方法执行的一些有用的计算，例如：搜索和排序。这些算法被称为多态，那是因为相同的方法可以在相似的接口上有着不同的实现。</span><br></pre></td></tr></table></figure></li>
-<li><p>图例：</p>
-<p><img src="https://www.runoob.com/wp-content/uploads/2014/01/java-coll-2020-11-16.png" alt="img"></p>
+<li><p>图例：<img src="https://www.runoob.com/wp-content/uploads/2014/01/java-coll-2020-11-16.png" alt="img"></p>
 </li>
 </ul>
 </li>
