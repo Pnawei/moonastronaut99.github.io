@@ -26,8 +26,10 @@
 <meta property="og:image" content="https://i.loli.net/2021/11/13/t56CxOykjIbzQSG.png">
 <meta property="og:image" content="https://i.loli.net/2021/11/13/pLiGw9815yXorKN.png">
 <meta property="og:image" content="https://i.loli.net/2021/11/13/F16lsYT9A3OJwQn.png">
+<meta property="og:image" content="https://i.loli.net/2021/11/14/nUtFySXskRAvLcN.png">
+<meta property="og:image" content="https://i.loli.net/2021/11/14/5g8uKhZPTiG6fd9.png">
 <meta property="article:published_time" content="2021-11-06T16:00:00.000Z">
-<meta property="article:modified_time" content="2021-11-13T15:27:59.376Z">
+<meta property="article:modified_time" content="2021-11-14T02:55:48.404Z">
 <meta property="article:author" content="lunar Ping">
 <meta property="article:tag" content="建站">
 <meta property="article:tag" content="心得">
@@ -214,7 +216,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-keyboard-o"></i>
         <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">2.2k字</span>
+        <span class="post-count">2.3k字</span>
       </span>
     </span>
 
@@ -223,7 +225,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-hourglass-half"></i>
         <span class="post-meta-item-text">  阅读时长: </span>
-        <span class="post-count">9分</span>
+        <span class="post-count">10分</span>
       </span>
     </span>
 </div>
@@ -339,18 +341,33 @@
 <li><p>在yilia主题的配置文件_config.yml文件中添加</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># 是否开启字数统计</span><br><span class="line"># 不需要使用，直接设置值为false，或注释掉</span><br><span class="line">word_count: True</span><br></pre></td></tr></table></figure></li>
 </ul>
-<h2 id="卜算子统计"><a href="#卜算子统计" class="headerlink" title="卜算子统计"></a>卜算子统计</h2><ul>
+<h3 id="卜算子统计"><a href="#卜算子统计" class="headerlink" title="卜算子统计"></a>卜算子统计</h3><ul>
 <li><p>在**themes/yilia/layout/_partial  <code>footer.ejs</code>**中添加代码</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">本站访问量&lt;span id=<span class="string">&quot;busuanzi_value_site_pv&quot;</span>&gt;&lt;/span&gt;次&amp;nbsp;</span><br><span class="line">本站访客数&lt;span id=<span class="string">&quot;busuanzi_value_site_uv&quot;</span>&gt;&lt;/span&gt;人&amp;nbsp;</span><br><span class="line">本页阅读量&lt;span id=<span class="string">&quot;busuanzi_value_page_pv&quot;</span>&gt;&lt;/span&gt;次&amp;nbsp;</span><br></pre></td></tr></table></figure></li>
 <li><p>在**themes/yilia/layout/_partial  <code>after-footer.ejs</code>**中最后添加代码</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script <span class="keyword">async</span> src=<span class="string">&quot;//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js&quot;</span>&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure></li>
 </ul>
-<h2 id="网站运行状况监视"><a href="#网站运行状况监视" class="headerlink" title="网站运行状况监视"></a>网站运行状况监视</h2><ul>
+<h3 id="网站运行状况监视"><a href="#网站运行状况监视" class="headerlink" title="网站运行状况监视"></a>网站运行状况监视</h3><ul>
 <li><p>在**themes/yilia/layout/_partial  <code>footer.ejs</code>**中添加代码</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&lt;span id=<span class="string">&quot;timeDate&quot;</span>&gt;载入天数...&lt;<span class="regexp">/span&gt;&lt;span id=&quot;times&quot;&gt;载入时分秒...&lt;/</span>span&gt;</span><br><span class="line">    <span class="xml"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span></span></span><br><span class="line"><span class="javascript"><span class="xml">    <span class="keyword">var</span> now = <span class="keyword">new</span> <span class="built_in">Date</span>(); </span></span></span><br><span class="line"><span class="javascript"><span class="xml"><span class="function"><span class="keyword">function</span> <span class="title">createtime</span>(<span class="params"></span>) </span>&#123; </span></span></span><br><span class="line"><span class="javascript"><span class="xml">    <span class="keyword">var</span> grt= <span class="keyword">new</span> <span class="built_in">Date</span>(<span class="string">&quot;2021/11/01 08:00:00&quot;</span>); <span class="comment">//此处修改你的建站时间或者网站上线时间 </span></span></span></span><br><span class="line"><span class="javascript"><span class="xml">    now.setTime(now.getTime()+<span class="number">250</span>); </span></span></span><br><span class="line"><span class="javascript"><span class="xml">    days = (now - grt ) / <span class="number">1000</span> / <span class="number">60</span> / <span class="number">60</span> / <span class="number">24</span>; dnum = <span class="built_in">Math</span>.floor(days); </span></span></span><br><span class="line"><span class="javascript"><span class="xml">    hours = (now - grt ) / <span class="number">1000</span> / <span class="number">60</span> / <span class="number">60</span> - (<span class="number">24</span> * dnum); hnum = <span class="built_in">Math</span>.floor(hours); </span></span></span><br><span class="line"><span class="javascript"><span class="xml">    <span class="keyword">if</span>(<span class="built_in">String</span>(hnum).length ==<span class="number">1</span> )&#123;hnum = <span class="string">&quot;0&quot;</span> + hnum;&#125; minutes = (now - grt ) / <span class="number">1000</span> /<span class="number">60</span> - (<span class="number">24</span> * <span class="number">60</span> * dnum) - (<span class="number">60</span> * hnum); </span></span></span><br><span class="line"><span class="javascript"><span class="xml">    mnum = <span class="built_in">Math</span>.floor(minutes); <span class="keyword">if</span>(<span class="built_in">String</span>(mnum).length ==<span class="number">1</span> )&#123;mnum = <span class="string">&quot;0&quot;</span> + mnum;&#125; </span></span></span><br><span class="line"><span class="javascript"><span class="xml">    seconds = (now - grt ) / <span class="number">1000</span> - (<span class="number">24</span> * <span class="number">60</span> * <span class="number">60</span> * dnum) - (<span class="number">60</span> * <span class="number">60</span> * hnum) - (<span class="number">60</span> * mnum); </span></span></span><br><span class="line"><span class="javascript"><span class="xml">    snum = <span class="built_in">Math</span>.round(seconds); <span class="keyword">if</span>(<span class="built_in">String</span>(snum).length ==<span class="number">1</span> )&#123;snum = <span class="string">&quot;0&quot;</span> + snum;&#125; </span></span></span><br><span class="line"><span class="javascript"><span class="xml">    <span class="built_in">document</span>.getElementById(<span class="string">&quot;timeDate&quot;</span>).innerHTML = <span class="string">&quot;本站已安全运行 &quot;</span>+dnum+<span class="string">&quot; 天 &quot;</span>; </span></span></span><br><span class="line"><span class="javascript"><span class="xml">    <span class="built_in">document</span>.getElementById(<span class="string">&quot;times&quot;</span>).innerHTML = hnum + <span class="string">&quot; 小时 &quot;</span> + mnum + <span class="string">&quot; 分 &quot;</span> + snum + <span class="string">&quot; 秒&quot;</span>; &#125; </span></span></span><br><span class="line"><span class="javascript"><span class="xml"><span class="built_in">setInterval</span>(<span class="string">&quot;createtime()&quot;</span>,<span class="number">250</span>);</span></span></span><br><span class="line"><span class="javascript"><span class="xml"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br></pre></td></tr></table></figure></li>
 <li><p>添加图示<br><img src="https://i.loli.net/2021/11/13/pLiGw9815yXorKN.png" alt="image.png"></p>
 </li>
 <li><p>在主页中的显示效果<br><img src="https://i.loli.net/2021/11/13/F16lsYT9A3OJwQn.png" alt="image.png"></p>
+</li>
+</ul>
+<h3 id="鼠标点击烟花特效"><a href="#鼠标点击烟花特效" class="headerlink" title="鼠标点击烟花特效"></a>鼠标点击烟花特效</h3><ul>
+<li><p>需要一段鼠标点击特效的 js 代码</p>
+<p>我的烟花特效代码参考：<a target="_blank" rel="noopener" href="https://github.com/moonastronaut99/moonastronaut99.github.io/blob/main/mouse-click.js">https://github.com/moonastronaut99/moonastronaut99.github.io/blob/main/mouse-click.js</a></p>
+</li>
+<li><p>设置流程</p>
+<ul>
+<li><p>在<strong>themes/yilia/source</strong>中创建**<code>mouse-click.js</code>** 文件，然后把你的鼠标点击样式的js代码粘贴到这里即可（样式根据自己爱好选择，我的是烟花特效）</p>
+<p><img src="https://i.loli.net/2021/11/14/nUtFySXskRAvLcN.png" alt="image.png"></p>
+</li>
+<li><p>在**themes/yilia/layout/_partial  <code>footer.ejs</code>**中添加代码</p>
+<p><img src="https://i.loli.net/2021/11/14/5g8uKhZPTiG6fd9.png" alt="image.png"></p>
+</li>
+</ul>
 </li>
 </ul>
 <p>至此我的网站基本的功能就只有这些，其他的功能后续会慢慢优化。</p>
@@ -628,14 +645,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">在线</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">小工具</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">建站</a>
               </li>
              
@@ -645,6 +654,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">在线</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">小工具</a>
               </li>
              
               <li class="article-tag-list-item">
